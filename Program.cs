@@ -1,4 +1,4 @@
-﻿using BenchmarkDotNet.Mathematics;
+﻿
 using System;
 
 namespace Kreis_Rechner
@@ -22,14 +22,14 @@ namespace Kreis_Rechner
                 {
                     Console.WriteLine("Was ist d?");
                     string d = Console.ReadLine();
-                    int dd = int.Parse(d);
+                    double dd = double.Parse(d);
                     KFA(dd);
                 }
-                if (_ra == "r")
+                else if (_ra == "r")
                 {
                     Console.WriteLine("Was ist r?");
                     string r = Console.ReadLine();
-                    int rr = int.Parse(r);
+                    double rr = double.Parse(r);
                     KFA2(rr);
 
                 }
@@ -51,15 +51,15 @@ namespace Kreis_Rechner
                 {
                     Console.WriteLine("Was ist A?");
                     string A = Console.ReadLine();
-                    int AA = int.Parse(A);
+                    double AA = double.Parse(A);
                     KFD(AA);
                 }
 
-                if (ua == "U")
+                else if (ua == "U")
                 {
                     Console.WriteLine("Was ist U?");
                     string U = Console.ReadLine();
-                    int UU = int.Parse(U);
+                    double UU = double.Parse(U);
                     KFD2(UU);
                 }
                 else
@@ -79,16 +79,16 @@ namespace Kreis_Rechner
 
                     Console.WriteLine("Was ist A?");
                     string A = Console.ReadLine();
-                    int AA = int.Parse(A);
+                    double AA = double.Parse(A);
 
                     KFR(AA);
                 }
 
-                if (au == "U")
+                else if (au == "U")
                 {
                     Console.WriteLine("Was ist U?");
                     string U = Console.ReadLine();
-                    int UU = int.Parse(U);
+                    double UU = double.Parse(U);
 
                     KFR2(UU);
                 }
@@ -108,12 +108,12 @@ namespace Kreis_Rechner
                 {
                     Console.WriteLine("Was ist r?");
                     string r = Console.ReadLine();
-                    int rr = int.Parse(r);
+                    double rr = double.Parse(r);
 
                     KFU(rr);
                 }
 
-            if (rd == "d")
+            else if  (rd == "d")
             {
                 Console.WriteLine("Was ist d?");
                 string d = Console.ReadLine();
